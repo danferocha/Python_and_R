@@ -1,0 +1,82 @@
+cadastro <- function(a){
+     nomes <- as.character()
+     prova1 <- as.numeric()
+     prova2 <- as.numeric()
+     prova3 <- as.numeric()
+     media <-as.numeric()
+     resultado <- as.character()
+     
+     aluno <-data.frame (nomes,prova1,prova2,prova3,media,resultado)
+     aluno <-resultado<-as.character(alunos$resultado)
+     aluno$resultado<- as.character(alunos$resultado)
+     alunos$nomes<- as.character(alunos$nomes)
+     
+     print("ESTA FUNÇÃO REALIZA AS SEGUINTES ATIVIDADES")
+     print("1 - CADASTRA ALUNOS")
+     print("2 - REceber notas")
+     print("3 - Mostrar média e aprovação")
+     
+     #Receber notas do aluno
+     
+     print("CADASTRO DE ALUNOS DIGITE: 1")
+     
+     x<- scan(n=1)
+     i <- 1
+     
+     #CRIAR LISTA DE CADASTRO
+     
+     while(x==1){
+         
+         print("Nome: ")
+         nomes<- scan(what-character(),nmax-1)
+         
+         print("Nota1: ")
+         prova1 <- scan(n-1)
+         
+         print("Nota2: ")
+         prova2 <- scan(n-1)
+         
+         print("Nota3: ")
+         prova3 <- scan(n-1)
+         
+         notas<-c(prova1, prova2, prova3)
+         
+         for(j in 1:lenght(notas)){
+             
+             cat("Nota na prova",j,"=")
+             cat("",notas [j],"\n")
+             
+             media <- mean(notas)
+             cat("Média do aluno: ",media,"\n")
+             
+             #CONDIÇÃO
+             
+             if(media >= 7){
+                 print("Aprovado!!!")
+                 resultado <- "Aprovado"
+             }
+             if(media < 7){
+                 print("Reprovado!?")
+                 resultado <- "Reprovado"
+             }
+             
+             i<- i+1
+             alunos[i,]<- c(nomes, prova1, prova2, prova3, media, resultado)
+             
+             print("CADASTRAR OUTRO ALUNO DIGITE [1] PARA SIMM E [2] PARA NÃO: ")
+                   
+                   x <- scan(n=1)
+                   
+                   
+         } # FIM DO LAÇO
+         
+         print("")
+         print("Obrigado!!!")
+         print("Banco de dados: ")
+         return(alunos)
+
+
+
+
+
+

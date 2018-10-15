@@ -1,14 +1,12 @@
-Criando programas básicos de testes iniciais de aprefeiçoamento em Python e Kivin
-
-
-O projeto será compostos por diversos pequenos programas, que poderão ou não serassociado a um único programa.
-
-O programa criado para sortear números dos jogos da Lotofácil - Loteria Federal,apresenta algumas falhas, ele a principio deverá ser utilizados para criar jogos e analisar junto com outras ferramentas como programas em liguagem R para identificar a possibilidade desses números sorteados sairem.
-
-projeto em sua versão inicial.
 
 
 
+##### CRIANDO PROGRAMAS BÁSICOS DE TESTES EM PYTHON E KIVIN #####
 
-Criação de sistema de análise e calculo de jogos.
+O projeto será composto por diversos pequenos programas, podendo esses não serem associado a um único objetivo, ou programa especifico.
+
+#### Fomador de jogos da loteria federal:
+
+O programa deverar criar sequencias de jogos, analisar ocorrencias das sequencias em um banco de dados, calucular probabilidade de ocorrencia por meio do historico.
+
 
